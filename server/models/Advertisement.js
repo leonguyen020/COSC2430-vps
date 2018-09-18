@@ -71,10 +71,6 @@ const Advertisement = new Schema(
     expiredDate: {
       type: Date,
     },
-    images: {
-      type: Array,
-      default: [],
-    },
   },
   { timestamps: true },
 );
