@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PageTop from "./../utils/pageTop";
 
 import {
-  areas,
+  // areas,
   directions,
   numberOfBedrooms,
   numberOfFloors,

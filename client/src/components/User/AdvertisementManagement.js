@@ -326,11 +326,7 @@ class AdvertisementManagement extends Component {
                       />
                     </td>
                     <td>
-                      <img
-                        alt="default image"
-                        style={{ width: "100px", height: "100px" }}
-                        src={defaultImage}
-                      />
+                      <img alt="default" style={{ width: "100px", height: "100px" }} src={defaultImage} />
                     </td>
                     {/* <td>Start Year</td>
                     <td>
@@ -560,7 +556,7 @@ class AdvertisementComponent extends Component {
             <img
               style={{ width: "100px", height: "100px" }}
               src={item.image ? item.image : defaultImage}
-              alt="Image"
+              alt="default"
             />
           }
         </td>

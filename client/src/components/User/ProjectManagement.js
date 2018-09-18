@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { confirmAlert } from "react-confirm-alert"; // Import
 import request from "../utils/request";
-import axios from "axios";
+// import axios from "axios";
 import checkProperties from "../utils/checkProperties";
 import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 

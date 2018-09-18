@@ -1,11 +1,11 @@
 import React from "react";
-import MyButton from "./../utils/button";
+// import MyButton from "./../utils/button";
 import moment from "moment";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import faTruck from "@fortawesome/fontawesome-free-solid/faTruck";
-import faCheck from "@fortawesome/fontawesome-free-solid/faCheck";
-import faTimes from "@fortawesome/fontawesome-free-solid/faTimes";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import faTruck from "@fortawesome/fontawesome-free-solid/faTruck";
+// import faCheck from "@fortawesome/fontawesome-free-solid/faCheck";
+// import faTimes from "@fortawesome/fontawesome-free-solid/faTimes";
 
 const AdvertisementInfo = props => {
   // const showAdvertisementTags = detail => (
