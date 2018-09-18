@@ -33,7 +33,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://http://128.199.156.51:5000"
+      "target": "http://http://localhost:5000"
     }
   }
 }

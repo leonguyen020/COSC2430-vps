@@ -19,7 +19,7 @@ class ProjectManagement extends Component {
     };
   }
   componentDidMount() {
-    request("http://http://128.199.156.51:5000/api/projects/get-projects", {
+    request("http://http://localhost:5000/api/projects/get-projects", {
       method: "GET",
     }).then(response =>
       this.setState({
@@ -40,7 +40,7 @@ class ProjectManagement extends Component {
     });
   };
   onDelete = _id => {
-    request("http://http://128.199.156.51:5000/api/projects/delete-project/" + _id, {
+    request("http://http://localhost:5000/api/projects/delete-project/" + _id, {
       method: "DELETE",
     }).then(response => {
       const data = this.state.data;
@@ -51,7 +51,7 @@ class ProjectManagement extends Component {
     });
   };
   onEdit = (_id, data) => {
-    request("http://http://128.199.156.51:5000/api/projects/edit-project/" + _id, {
+    request("http://http://localhost:5000/api/projects/edit-project/" + _id, {
       method: "PUT",
       body: data,
     }).then(response => {
@@ -61,12 +61,12 @@ class ProjectManagement extends Component {
   onAdd = item => {
     // console.log(item)
     if (checkProperties(item)) {
-      request("http://http://128.199.156.51:5000/api/projects/create-new-project", {
+      request("http://http://localhost:5000/api/projects/create-new-project", {
         method: "POST",
         body: item,
       }).then(response => {
         // console.log(response)
-        request("http://http://128.199.156.51:5000/api/projects/get-projects", {
+        request("http://http://localhost:5000/api/projects/get-projects", {
           method: "GET",
         }).then(response =>
           this.setState({
