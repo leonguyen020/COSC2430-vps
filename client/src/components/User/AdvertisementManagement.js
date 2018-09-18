@@ -78,16 +78,16 @@ class AdvertisementManagement extends Component {
   renderSingleDropDown = (items, isWhat) => {
     return items.map((item, index) => {
       var value;
-      if (isWhat == "project") {
+      if (isWhat === "project") {
         value = item.name;
       }
-      if (isWhat == "realEstate") {
+      if (isWhat === "realEstate") {
         value = item.title;
       }
-      if (isWhat == "area") {
+      if (isWhat === "area") {
         value = item.name;
       }
-      if (isWhat == "direction") {
+      if (isWhat === "direction") {
         value = item;
       }
       return <option key={index}>{value}</option>;
@@ -327,6 +327,7 @@ class AdvertisementManagement extends Component {
                     </td>
                     <td>
                       <img
+                        alt="default image"
                         style={{ width: "100px", height: "100px" }}
                         src={defaultImage}
                       />
