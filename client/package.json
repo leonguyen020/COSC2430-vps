@@ -10,7 +10,6 @@
     "@material-ui/core": "^3.0.3",
     "ajv": "^6.5.3",
     "axios": "^0.18.0",
-    "bcrypt": "^3.0.0",
     "bcryptjs": "^2.4.3",
     "react": "^16.5.0",
     "react-confirm-alert": "^2.0.5",
@@ -35,7 +34,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://128.199.166.141:5000"
+      "target": "http://localhost:5000"
     }
   }
 }

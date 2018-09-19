@@ -31,14 +31,14 @@ class AdvertisementManagement extends Component {
   }
 
   componentDidMount() {
-    request("http://128.199.166.141:5000/api/advertisements/get-advertisements", {
+    request("http://localhost:5000/api/advertisements/get-advertisements", {
       method: "GET",
     }).then(response =>
       this.setState({
         data: response,
       }),
     );
-    request("http://128.199.166.141:5000/api/projects/get-projects", {
+    request("http://localhost:5000/api/projects/get-projects", {
       method: "GET",
     }).then(response =>
       this.setState({
@@ -46,7 +46,7 @@ class AdvertisementManagement extends Component {
         project: response[0]._id,
       }),
     );
-    request("http://128.199.166.141:5000/api/realEstates/get-real-estates", {
+    request("http://localhost:5000/api/realEstates/get-real-estates", {
       method: "GET",
     }).then(response =>
       this.setState({
@@ -54,7 +54,7 @@ class AdvertisementManagement extends Component {
         realEstate: response[0]._id,
       }),
     );
-    request("http://128.199.166.141:5000/api/advertisements/areas/get-areas", {
+    request("http://localhost:5000/api/advertisements/areas/get-areas", {
       method: "GET",
     }).then(response =>
       this.setState({
@@ -94,7 +94,7 @@ class AdvertisementManagement extends Component {
     });
   };
   onDelete = _id => {
-    request("http://128.199.166.141:5000/api/advertisements/delete-ad/" + _id, {
+    request("http://localhost:5000/api/advertisements/delete-ad/" + _id, {
       method: "DELETE",
     }).then(response => {
       const data = this.state.data;
@@ -106,7 +106,7 @@ class AdvertisementManagement extends Component {
   };
   onEdit = (_id, data) => {
     // console.log(data)
-    request("http://128.199.166.141:5000/api/advertisements/edit-ad/" + _id, {
+    request("http://localhost:5000/api/advertisements/edit-ad/" + _id, {
       method: "PUT",
       body: data,
     }).then(response => {
@@ -116,12 +116,12 @@ class AdvertisementManagement extends Component {
   onAdd = item => {
     // console.log(item)
     if (checkProperties(item)) {
-      request("http://128.199.166.141:5000/api/advertisements/create-new-ad", {
+      request("http://localhost:5000/api/advertisements/create-new-ad", {
         method: "POST",
         body: item,
       }).then(response => {
         // console.log(response)
-        request("http://128.199.166.141:5000/api/advertisements/get-advertisements", {
+        request("http://localhost:5000/api/advertisements/get-advertisements", {
           method: "GET",
         }).then(response =>
           this.setState({
